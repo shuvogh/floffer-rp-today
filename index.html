@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Flash Offer Receipts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="left">
+
+      <div class="form">
+        <input type="date" placeholder="date" id="date" /><br>
+        <input type="text" placeholder="time" id="time" /><br>
+        <button id="submit" type="submit">Submit Date and Time</button>
+      </div><br>
+
+      <div class="subtitle">
+        <div>
+          <input type="number" placeholder="enter amount" name="subtotal" id="subtotal"><br>
+          <!-- <input type="number" name="sales" id="sales"><br> -->
+          <!-- <input type="number" name="total" id="totals"><br> -->
+          <!-- <input type="number" name="debit" id="debit"><br><br> -->
+          <button id="submits" type="submit">Submit Amount</button>
+        </div>
+      </div>
+      <br>
+      <div class="shopname">
+        <select id="shopnam" name="shop">
+          <!-- <option value="BODYARMOR">BODYARMOR</option>
+          <option value="DUREX">DUREX</option>
+          <option value="Penetrex">Penetrex</option>
+          <option value="Nike">Nike</option>
+          <option value="Nivea">Nivea</option>
+          <option value="Kraft">Kraft</option> -->
+          <option value="IKEA">IKEA</option>
+          <option value="Krispy Kreme Donuts">Krispy Kreme Donuts</option>
+          <option value="Staples">Staples</option>
+          <option value="Walgreens">Walgreens</option>
+          <option value="Sam's Club">Sam's Club</option>
+          <option value="ALDI">ALDI</option>
+          <option value="Shell">Shell</option>
+          <option value="Burger King">Burger King</option>
+          <option value="Papa John's">Papa John's</option>
+          <option value="ShopRite">ShopRite</option>
+          <option value="Taco Bell">Taco Bell</option>
+          <option value="Dollar Tree">Dollar Tree</option>
+          <option value="Circle K">Circle K</option>
+          <option value="CVS">CVS</option>
+          <option value="Family Dollar">Family Dollar</option>
+          <option value="Safeway">Safeway</option>
+          <option value="Subway">Subway</option>
+          <option value="Albertsons">Albertsons</option>
+          <option value="McDonald's">McDonald's</option>
+          <option value="Wendy's">Wendy's</option>
+          <option value="Bath & Body Works">Bath & Body Works</option>
+          <option value="Domino's Pizza">Domino's Pizza</option>
+          <option value="Starbucks">Starbucks</option>
+          <option value="GAP">GAP</option>
+          <option value="KFC">KFC</option>
+          <option value="7-Eleven">7-Eleven</option>
+          <option value="Pizzahut">Pizzahut</option>
+          <option value="Speedway">Speedway</option>
+          <option value="Dairy queen">Dairy queen</option>
+          <option value="Costco">Costco</option>
+
+        </select><br>
+        <button id="submitss" type="submit">Add Shop</button>
+      </div>
+
+    </div>
+
+    <div class="right">
+
+      <div class="date">
+        <span id="dateIn">12/11/2023</span> <span id="timeIn">4:20PM</span>
+      </div>
+      <div class="total">
+        <span id="subtotalin">100.00</span><br>
+        <!-- <span id="salesin">10.00</span><br> -->
+        <!-- <span id="totalin">110.00</span><br> -->
+        <!-- <span id="debitin">380.40</span><br> -->
+      </div>
+      <!-- <div class="barcode">
+        CLARITIN ⓟ  41100 58990
+      </div> -->
+      <div class="shopnam">
+
+        <div class="shopnam">
+          <h4 id="shopnamin" class="shopid">shop </h4>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("submit").addEventListener("click", function () {
+      const date = document.getElementById("date").value;
+      const time = document.getElementById("time").value;
+
+      document.getElementById("dateIn").innerText = date;
+      document.getElementById("timeIn").innerText = time;
+    });
+    document.getElementById("submits").addEventListener("click", function () {
+      const subtotal = document.getElementById("subtotal").value;
+
+
+      document.getElementById("subtotalin").innerText = subtotal;
+      document.getElementById("salesin").innerText = sales;
+      document.getElementById("totalin").innerText = totals;
+
+    });
+    document.getElementById("submitss").addEventListener("click", function () {
+      const subtotal = document.getElementById("shopnam").value;
+
+      document.getElementById("shopnamin").innerText = subtotal;
+
+    });
+
+  </script>
+</body>
+
+</html>

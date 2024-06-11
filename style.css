@@ -1,0 +1,128 @@
+
+
+  
+.amount {
+  position: absolute;
+  bottom: 500px;
+  left: 135px;
+  font-size: 10px;
+  color: #080808;
+  
+  
+}
+.center-image {
+  height: 93%;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 50%;
+  
+}
+
+.form {
+  margin: 10px;
+}
+
+.form input {
+  margin: 2px;
+}
+
+.form button {
+  margin-left: 2px;
+  margin-top: 5px;
+}
+
+.shopname {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.right {
+  position: fixed;
+  width: 650PX;
+  height: 900px;
+  right: -30px;
+  background-image: url(img/hobby2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* position: relative; */
+}
+
+
+.total {
+  opacity: 96%;
+  font-size: 40px;
+  position: fixed;
+  font-weight: bold;
+  right: 210px;
+  top: 390px;
+  color: #353434;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#submits {
+  margin-top: 5px;
+}
+
+
+.right img {
+  width: 50%;
+}
+
+.date {
+  opacity: 80%;
+  position: absolute;
+  top: 205px;
+  right: 310px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #141313;
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.shopnam {
+  opacity: 90%;
+  position: fixed;
+  width: 400px;
+  height: 20px;
+  /* background-color: aqua; */
+  top: 55px;
+  right: 110px;
+  display: flex;
+  font-size: 35px;
+  font-weight:bold;
+  align-items: center;
+  justify-content: center;
+  color: #0c0c0c;
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.shopid {
+  margin: 0; /* Remove default margin for h4 element */
+  font: bold;
+}
+
+button{
+  background-color: rgb(38, 143, 34);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.subtitle {
+  margin-left: 10px;
+}
+.barcode{
+  opacity: 0.8;
+  position: fixed;
+  right: 310px;
+  top: 329px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font: bold;
+  font-size: large;
+}
